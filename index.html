@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>AL Motos Peças e Acessórios</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Orçamentos</h1>
+        <div id="content">
+            <form id="partsRegistration">
+                <div class="container-sup">
+                    <input type="number" id="amount" name="amount" value="1" class="amount input-nav" placeholder="UN" autocomplete="off">
+                    <input type="text" id="parts" name="parts" placeholder="Nome da Peça" autocomplete="off" class="input-nav">
+                    <input type="number" id="prices" name="prices" placeholder="R$..." class="prices input-nav" autocomplete="off">
+                </div>
+                <div class="container-med">
+                    <input type="text" id="name" name="name" placeholder="Nome do Cliente" autocomplete="off" class="input-nav">
+                    <input type="text" id="vehicle" name="vehicle" placeholder="Modelo do veiculo" autocomplete="off" class="input-nav">
+                </div>
+                <div class="container-inf">
+                    <button type="submit" class="btn" id="submitBtn"><span class="button-content">Cadastrar</span></button>         
+                </div>
+                
+            </form>
+            <div id="productListContainer">
+                <h4>UN | Produtos | Preço</h4>
+                <ol id="productList"></ol>
+            </div>
+            <div id="imprimir">
+                <button id="btn-print" class="btn"><span class="button-content">imprimir</span></button>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+    </div>
+</body>
+</html>
